@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RequestPayload>
+<h:AppHdr xmlns:h="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+    <h:Fr>
+        <h:FIId>
+            <h:FinInstnId>
+                <h:BICFI>ABBYGB2LMBP</h:BICFI>
+            </h:FinInstnId>
+        </h:FIId>
+    </h:Fr>
+    <h:To>
+        <h:FIId>
+            <h:FinInstnId>
+                <h:BICFI>BOFSDEB1XXX</h:BICFI>
+            </h:FinInstnId>
+        </h:FIId>
+    </h:To>
+    <h:BizMsgIdr>JZ6lEhaq1wtxl5AT</h:BizMsgIdr>
+    <h:MsgDefIdr>pacs.008.001.10</h:MsgDefIdr>
+    <h:BizSvc>swift.cbprplus.01</h:BizSvc>
+    <h:CreDt>2023-04-19T12:49:08.872+01:00</h:CreDt>
+</h:AppHdr>
+<Doc:Document xmlns:Doc="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <Doc:FIToFICstmrCdtTrf>
+        <Doc:GrpHdr>
+            <Doc:MsgId>JZ6lEhaq1wtxl5AT</Doc:MsgId>
+            <Doc:CreDtTm>2023-04-19T12:49:08.872+01:00</Doc:CreDtTm>
+            <Doc:NbOfTxs>1</Doc:NbOfTxs>
+            <Doc:SttlmInf>
+                <Doc:SttlmMtd>INDA</Doc:SttlmMtd>
+            </Doc:SttlmInf>
+        </Doc:GrpHdr>
+        <Doc:CdtTrfTxInf>
+            <Doc:PmtId>
+                <Doc:InstrId>7DI48uHZqrUOgOvk</Doc:InstrId>
+                <Doc:EndToEndId>v2SzoaavVUZJyis1</Doc:EndToEndId>
+                <Doc:UETR>ece90c9e-5ab7-45b6-9605-aa41f5f8b98c</Doc:UETR>
+            </Doc:PmtId>
+            <Doc:PmtTpInf>
+                <Doc:InstrPrty>HIGH</Doc:InstrPrty>
+                <Doc:CtgyPurp>
+                    <Doc:Cd>ICCP</Doc:Cd>
+                </Doc:CtgyPurp>
+            </Doc:PmtTpInf>
+            <Doc:IntrBkSttlmAmt Ccy="GBP">1251934473.00</Doc:IntrBkSttlmAmt>
+            <Doc:IntrBkSttlmDt>2023-04-19</Doc:IntrBkSttlmDt>
+            <Doc:InstdAmt Ccy="GBP">1251934429.00</Doc:InstdAmt>
+            <Doc:ChrgBr>CRED</Doc:ChrgBr>
+            <Doc:ChrgsInf>
+                <Doc:Amt Ccy="GBP">3600790696.00</Doc:Amt>
+                <Doc:Agt>
+                    <Doc:FinInstnId>
+                        <Doc:BICFI>ABBYGB2LMBP</Doc:BICFI>
+                    </Doc:FinInstnId>
+                </Doc:Agt>
+            </Doc:ChrgsInf>
+            <Doc:PrvsInstgAgt1>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>HBUKGB41</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:PrvsInstgAgt1>
+            <Doc:InstgAgt>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>ABBYGB2LMBP</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:InstgAgt>
+            <Doc:InstdAgt>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>BOFSDEB1XXX</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:InstdAgt>
+            <Doc:IntrmyAgt1>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>BEVODEA1</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:IntrmyAgt1>
+            <Doc:Dbtr>
+                <Doc:Nm>Morden Barn Limited</Doc:Nm>
+                <Doc:PstlAdr>
+                    <Doc:StrtNm>Sticklands Farmhouse</Doc:StrtNm>
+                    <Doc:PstCd>BH20 7DL</Doc:PstCd>
+                    <Doc:TwnNm>Wareham</Doc:TwnNm>
+                    <Doc:Ctry>GB</Doc:Ctry>
+                </Doc:PstlAdr>
+            </Doc:Dbtr>
+            <Doc:DbtrAgt>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>CLAOGB2L</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:DbtrAgt>
+            <Doc:CdtrAgt>
+                <Doc:FinInstnId>
+                    <Doc:BICFI>OLBODEH2</Doc:BICFI>
+                </Doc:FinInstnId>
+            </Doc:CdtrAgt>
+            <Doc:Cdtr>
+                <Doc:Nm>XY ERS Deutschland GmbH</Doc:Nm>
+                <Doc:PstlAdr>
+                    <Doc:StrtNm>Thurn-und-Taxis Platz, 6</Doc:StrtNm>
+                    <Doc:PstCd>60313</Doc:PstCd>
+                    <Doc:TwnNm>Frankfurt</Doc:TwnNm>
+                    <Doc:Ctry>DE</Doc:Ctry>
+                </Doc:PstlAdr>
+            </Doc:Cdtr>
+            <Doc:CdtrAcct>
+                <Doc:Id>
+                    <Doc:Othr>
+                        <Doc:Id>43487202984</Doc:Id>
+                    </Doc:Othr>
+                </Doc:Id>
+                <Doc:Ccy>USD</Doc:Ccy>
+                <Doc:Nm>XY ERS Deutschland GmbH</Doc:Nm>
+                <Doc:Prxy>
+                    <Doc:Tp>
+                        <Doc:Cd>EMAL</Doc:Cd>
+                    </Doc:Tp>
+                    <Doc:Id>webmaster-services-peter-crazy-but-oh-so-ubber-cool-english-alphabet-loverer-abcdefghijklmnopqrstuvwxyz@please-try-to.send-me-an-email-if-you-can-possibly-begin-to-remember-this-coz.this-is-the-longest-email-address-known-to-man-but-to-be-honest.this-is-such-a-stupidly-long-sub-domain-it-could-go-on-forever.pacraig.com</Doc:Id>
+                </Doc:Prxy>
+            </Doc:CdtrAcct>
+            <Doc:InstrForCdtrAgt>
+                <Doc:Cd>PHOB</Doc:Cd>
+                <Doc:InstrInf>Please call the creditor as soon as funds are credited to the account.The phone number is 4234421443 or 324979347. Leave a message.</Doc:InstrInf>
+            </Doc:InstrForCdtrAgt>
+            <Doc:InstrForNxtAgt>
+                <Doc:InstrInf>Good luck with this payment order.I love this free text field and really want to fill it with useless information</Doc:InstrInf>
+            </Doc:InstrForNxtAgt>
+            <Doc:Purp>
+                <Doc:Cd>COMC</Doc:Cd>
+            </Doc:Purp>
+        </Doc:CdtTrfTxInf>
+    </Doc:FIToFICstmrCdtTrf>
+</Doc:Document>
+</RequestPayload>

@@ -1,0 +1,76 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/iso20022
+    username: root
+    password: DivSQLorce2014#
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+rapide:
+  PurposeCode:
+    - BONU
+    - CASH
+    - CBLK
+    - CCRD
+    - CORT
+    - DCRD
+    - DIVI
+    - DVPM
+    - EPAY
+    - FCIN
+    - FCOL
+    - GOVT
+    - HEDG
+    - ICCP
+    - IDCP
+    - INTC
+    - INTE
+    - LOAN
+    - MP2B
+    - MP2P
+    - OTHR
+    - PENS
+    - RPRE
+    - RRCT
+    - RVPM
+    - SALA
+    - SECU
+    - SSBE
+    - SUPP
+    - TAXS
+    - TRAD
+    - TREA
+    - VATX
+    - WHLD
+  Currency:
+    - Country: US
+      Code: USD
+    - Country: UK
+      Code: GBP
+    - Country: GB
+      Code: GBP
+    - Country: IN
+      Code: INR
+    - Country: MX
+      Code: MXN
+    - Country: CA
+      Code: CAD
+    - Country: IE
+      Code: EUR
+    - Country: TH
+      Code: THB
+  ValidationSchema:
+    - Message: 00800108
+      FileName: pacs.008.001.08.xsd
+  InvalidMessageRetry: 10
+  SourceBicList:
+    - ABBYGB2LMBP
+    - BARCGB23XXX
+  DestinationBicList:
+    - BOFADEFFXXX
+    - BOFSDEB1XXX
+
+
